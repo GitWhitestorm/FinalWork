@@ -26,5 +26,27 @@ namespace FinalWork
         {
 
         }
+
+        private void isDisplay(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                passwordBox.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordBox.PasswordChar = '*';
+            }
+        }
+
+        private void passwordBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Load_Load(object sender, EventArgs e)
+        {
+            passwordBox.PasswordChar = '*';
+        }
     }
 }
