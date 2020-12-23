@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FinalWork
 {
-    public partial class Certificate_admin : Form
+    public partial class Librarian : Form
     {
-        public Certificate_admin()
+        public Librarian()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

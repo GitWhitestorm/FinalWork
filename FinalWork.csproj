@@ -52,6 +52,12 @@
     <Compile Include="Certificate_admin.Designer.cs">
       <DependentUpon>Certificate_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Librarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Librarian.Designer.cs">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Load.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     <Compile Include="Reader.Designer.cs">
       <DependentUpon>Reader.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Certificate_admin.resx">
+      <DependentUpon>Certificate_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Librarian.resx">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Load.resx">
       <DependentUpon>Load.cs</DependentUpon>
     </EmbeddedResource>
