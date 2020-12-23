@@ -36,5 +36,16 @@ namespace FinalWork
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void 注销ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Button button = new Button();
+            MessageBox.Show("ssss", "sss");
+        }
     }
 }
