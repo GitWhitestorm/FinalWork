@@ -16,7 +16,7 @@ namespace FinalWork
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Certificate_admin());
+            Application.Run(new Librarian());
         }
     }
 }

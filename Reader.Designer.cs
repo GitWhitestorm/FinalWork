@@ -31,6 +31,7 @@ namespace FinalWork
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@ namespace FinalWork
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button3 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
@@ -95,6 +95,16 @@ namespace FinalWork
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(435, 214);
             this.panel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(211, 173);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "挂失";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             // 
             // label6
             // 
@@ -363,6 +373,7 @@ namespace FinalWork
             this.功能ToolStripMenuItem.Name = "功能ToolStripMenuItem";
             this.功能ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.功能ToolStripMenuItem.Text = "功能";
+            this.功能ToolStripMenuItem.Click += new System.EventHandler(this.功能ToolStripMenuItem_Click);
             // 
             // 修改密码ToolStripMenuItem
             // 
@@ -383,16 +394,6 @@ namespace FinalWork
             this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem1.Text = "退出";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(211, 173);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "挂失";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            // 
             // Reader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -411,6 +412,7 @@ namespace FinalWork
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Reader";
             this.Text = "Reader";
+            this.Load += new System.EventHandler(this.Reader_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

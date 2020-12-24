@@ -47,5 +47,15 @@ namespace FinalWork
             Button button = new Button();
             MessageBox.Show("ssss", "sss");
         }
+
+        private void Reader_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 功能ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

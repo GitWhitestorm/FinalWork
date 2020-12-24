@@ -72,6 +72,12 @@
     <Compile Include="Reader.Designer.cs">
       <DependentUpon>Reader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sreach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sreach.Designer.cs">
+      <DependentUpon>Sreach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Certificate_admin.resx">
       <DependentUpon>Certificate_admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="Reader.resx">
       <DependentUpon>Reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sreach.resx">
+      <DependentUpon>Sreach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
