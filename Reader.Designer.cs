@@ -394,6 +394,10 @@ namespace FinalWork
             this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem1.Text = "退出";
             // 
+            // bindingSource2
+            // 
+            this.bindingSource2.CurrentChanged += new System.EventHandler(this.bindingSource2_CurrentChanged);
+            // 
             // Reader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);

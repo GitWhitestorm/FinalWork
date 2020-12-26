@@ -57,5 +57,10 @@ namespace FinalWork
         {
 
         }
+
+        private void bindingSource2_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

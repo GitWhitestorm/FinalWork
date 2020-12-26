@@ -58,6 +58,14 @@
     <Compile Include="Librarian.Designer.cs">
       <DependentUpon>Librarian.cs</DependentUpon>
     </Compile>
+    <Compile Include="libraryDataSet.cs">
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Load.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +110,17 @@
     <EmbeddedResource Include="Sreach.resx">
       <DependentUpon>Sreach.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="libraryDataSet.xsc">
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet.xss">
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

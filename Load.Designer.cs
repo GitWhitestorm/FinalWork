@@ -29,15 +29,20 @@ namespace FinalWork
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idbox = new System.Windows.Forms.TextBox();
             this.passwordBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.roles = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryDataSet1 = new FinalWork.libraryDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,13 +87,13 @@ namespace FinalWork
             this.label4.Text = "身份";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox1
+            // idbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(446, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 21);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.idbox.Location = new System.Drawing.Point(446, 208);
+            this.idbox.Name = "idbox";
+            this.idbox.Size = new System.Drawing.Size(186, 21);
+            this.idbox.TabIndex = 4;
+            this.idbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // passwordBox
             // 
@@ -98,16 +103,17 @@ namespace FinalWork
             this.passwordBox.TabIndex = 5;
             this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
             // 
-            // comboBox1
+            // roles
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.roles.FormattingEnabled = true;
+            this.roles.Items.AddRange(new object[] {
             "读者",
-            "管理员"});
-            this.comboBox1.Location = new System.Drawing.Point(446, 411);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 20);
-            this.comboBox1.TabIndex = 7;
+            "证件管理员",
+            "图书管理员"});
+            this.roles.Location = new System.Drawing.Point(446, 411);
+            this.roles.Name = "roles";
+            this.roles.Size = new System.Drawing.Size(186, 20);
+            this.roles.TabIndex = 7;
             // 
             // checkBox1
             // 
@@ -128,6 +134,17 @@ namespace FinalWork
             this.button1.TabIndex = 9;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = this.libraryDataSet1;
+            this.bindingSource1.Position = 0;
+            // 
+            // libraryDataSet1
+            // 
+            this.libraryDataSet1.DataSetName = "libraryDataSet";
+            this.libraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Load
             // 
@@ -136,9 +153,9 @@ namespace FinalWork
             this.ClientSize = new System.Drawing.Size(1051, 684);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.roles);
             this.Controls.Add(this.passwordBox);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.idbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -146,6 +163,8 @@ namespace FinalWork
             this.Name = "Load";
             this.Text = "登录";
             this.Load += new System.EventHandler(this.Load_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,11 +176,14 @@ namespace FinalWork
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.TextBox passwordBox;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox roles;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
+        private libraryDataSet libraryDataSet;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private libraryDataSet libraryDataSet1;
     }
 }
 
